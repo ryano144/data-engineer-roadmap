@@ -44,10 +44,10 @@
 	* Dimensional modeling [general recommendation]
 
 * Relational databases
-	* MySQL [general recommendation]
-	* PostgreSQL [general recommendation]
+	* MySQL 
+	* PostgreSQL 
 	* MariaDB
-	* Amazon Aurora
+	* Amazon Aurora (MySQL & PostgreSQL) [general recommendation]
 
 * Non-relational databases
 	* Document databases
@@ -57,11 +57,12 @@
 		* Azure CormosDB
 	* Wide column databases
 		* Apache Cassandra [general recommendation]
-		* Apache HBase [general recommendation]
+		* Apache HBase 
 		* Google Cloud Bigtable [personal recommendation]
 	* Graph databases
 		* Neo4j
 		* Amazon Neptune
+		* TigerGraph [personal recommendation]
 	* Key-value stores
 		* Redis [personal recommendation]
 		* Memcached
@@ -69,26 +70,22 @@
 
 *Note: Understand the difference between Document, Wide column, Graph and Key-value NoSQL databases. We recommend mastering one database from each category.*
 
-* Data warehouses
+* Data warehouses (learn the differences between the following)
 	* Snowflake [general recommendation]
-	* Presto
-	* Apache Hive
-	* Apache Impala
 	* Amazon Redshift [general recommendation]
 	* Google BigQuery [personal recommendation]
-	* Azure Synapse
-	* ClickHouse
+	* Azure Synapse [general recommendation]
 
-* Object storage
-	* AWS S3 [general recommendation]
+* Data Lake / Object storage
+	* AWS S3 (the next 3 are basically the same) [general recommendation]
 	* Azure Blob Storage
+	* Azure Data Lake Storage Gen 2
 	* Google Cloud Storage
-	* Apache Ozone
+	* HDFS [general recommendation]
 
 * Cluster computing fundamentals
-	* Apache Hadoop [general recommendation]
-	* HDFS [general recommendation]
-	* MapReduce [general recommendation]
+	* Apache Hadoop 
+	* MapReduce
 	* Lambda & Kappa architectures
 	* Managed Hadoop [general recommendation]
 		* Amazon EMR
@@ -99,7 +96,7 @@
 
 * Data processing
 	* Batch
-		* Apache Pig [general recommendation]
+		* Apache Pig
 		* Apache Arrow
 		* data build tool [personal recommendation]
 	* Hybrid
@@ -108,14 +105,15 @@
 		* Apache Flink [general recommendation]
 		* Apache NiFi
 	* Streaming
-		* Apache Kafka [personal recommendation]
-		* Apache Storm [general recommendation]
-		* Apache Samza
+		* Apache Kafka / Confluent Ecosystem [personal recommendation]
+		* Apache Pulsar [personal recommendation]
+		* Apache Storm 
 		* Amazon Kinesis
+		* Azure Event Hubs
 
 *Note: Hybrid frameworks are able to process both batch and streaming data. Batch data processing is often done by analytical data warehouse applications. See Data warehouses section for more.*
 
-* Messaging
+* Messaging (mainly learn the difference between messaging & streaming data)
 	* RabbitMQ [general recommendation]
 	* Apache ActiveMQ
 	* Amazon SNS & SQS
@@ -124,9 +122,18 @@
 
 * Workflow scheduling
 	* Apache Airflow [personal recommendation]
-	* Google Composer
+		* Google Composer
+		* AWS Managed Airflow
+	* AWS Step Functions
+	* Azure Data Factory
+	* Dagster
 	* Apache Oozie
 	* Luigi
+
+* Data Catalogs
+	* Metadata Management
+	* Data Quality Metadata
+	* Data Lineage 
 
 *Note: Cloud Composer is a managed Apache Airflow service on Google Cloud Platform.*
 
@@ -146,34 +153,44 @@
 		* SSH
 		* IP
 		* DNS
-	* Firewalls [general recommendation]
-	* VPN [general recommendation]
+	* Firewalls
+	* VPN 
 	* VPC [general recommendation]
 
 * Infrastructure as Code
 	* Containers
 		* Docker [personal recommendation]
-		* LXC
 	* Container orchestration
 		* Kubernetes [general recommendation]
-		* Docker Swarm
-		* Apache Mesos
-		* Google Kubernetes Engine (GKE) [general recommendation]
+			* Google Kubernetes Engine (GKE)
+			* AWS Elastic Kubernetes Service
+			* Azure Kubernetes Service 
+		* Kubernetes Helm [general recommendation]
 	* Infrastructure provisioning
 		* Terraform [personal recommendation]
-		* Pulumi
 		* AWS CDK [general recommendation]
+		* AWS CloudFormation
+		* Azure Resource Manager Templates
 
 * CI/CD
 	* GitHub Actions [general recommendation]
-	* Jenkins [general recommendation]
+	* Jenkins
 
 * Identity and access management
 	* Active Directory [general recommendation]
-	* Azure Active Directory
+		* Azure Active Directory
+		* Active Directory Federation Services
+	* SAML Protocol
+	* LDAP Protocol
+	* OAuth 2.0 Protocol
 
 * Data security & privacy
-	* Legal compliance [general recommendation]
+	* Role based access management
+	* Attribute based access management
+	* Legal compliance (GDPR / CCPA) requirements [general recommendation]
 	* Encryption [general recommendation]
 	* Key management [general recommendation]
+		* Hashicorp Vault
+		* Azure Key Vault
+		* AWS Secrets Manager
 	* Data governance & integrity
