@@ -238,3 +238,40 @@
 		* Immuta
 		* AWS Lakeformation Governed Tables
 		* Snowflake Privacy Policies
+
+* MLOps for training 
+	* Feature Store Data Access Patterns
+		* Tecton
+		* Feast
+	* Stages of the ML Pipeline 
+		* Exploratory Data Analysis
+		* Feature Engineering / Feature Selection
+		* Data Labeling
+		* Model Training / Hyperparameter Optimization
+		* Model Testing / Cross Validation
+		* Model Registration / Deployment
+	* GPU Clustering (Tensorboard, PyTorch Distributed)
+	* Experiment tracking (MLFlow, Weights & Biases)
+	* Model Artifacts (Onyx, PyTorch, Tensorflow)
+	* Model Registries / Catalogs
+
+* MLOps Inference
+	* Model Cross-Compilation 
+	* Orchestration frameworks
+		* Kubeflow
+		* Sagemaker Pipelines
+		* Azure Machine Learning Pipelines
+		* Spark MLLib
+	* Deployment Mechanisms
+		* Application embedded
+		* Model API
+		* Batch Predictions
+		* Streaming Predictions
+
+
+
+* MLOps Monitoring
+	* Drift Detection
+	* Prediction & Input Logging
+	* Ground Truth Logging & Correlation to Prediction
+	
