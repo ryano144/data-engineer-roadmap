@@ -139,10 +139,11 @@
 *Note: Most modern data processing frameworks are based on Apache Spark, which is in turn based on Hadoop & MapReduce to some extent. Understanding these concepts can help you learn modern data processing frameworks much quicker.*
 
 * Data processing
-	* Batch
+	* Batch / SQL
 		* Apache Pig
 		* Apache Arrow
 		* data build tool for Data Warehouses [personal recommendation]
+		* Databricks Delta Live Tables
 	* Hybrid
 		* Apache Spark / Lambda Architecture [general recommendation]
 		* Apache Beam 
@@ -157,38 +158,34 @@
 
 *Note: Hybrid frameworks are able to process both batch and streaming data. Batch data processing is often done by analytical data warehouse applications. See Data warehouses section for more.*
 
+* Workflow orchestration
+	* Apache Airflow [personal recommendation]
+		* Google Composer (managed airflow)
+		* AWS Managed Airflow
+	* Dagster
+	* AWS Step Functions
+	* Azure Data Factory
+	* Apache Oozie
+	* Luigi
+
+* Monitoring and observability for data pipelines
+	* Prometheus [general recommendation]
+	* Datadog [general recommendation]
+	* Sentry 
+	* Monte Carlo
+	* Datafold [personal recommendation]
+	* Soda Data
+	* StatsD
+
+*Note: Ingestion + Data Processing + Orchestration + Monitoring = Data Pipelines.*
+
+
 * Messaging (mainly learn the difference between messaging & streaming data)
 	* RabbitMQ [general recommendation]
 	* Apache ActiveMQ
 	* Amazon SNS & SQS
 	* Google PubSub
 	* Azure Service Bus
-
-* Workflow scheduling
-	* Apache Airflow [personal recommendation]
-		* Google Composer
-		* AWS Managed Airflow
-	* AWS Step Functions
-	* Azure Data Factory
-	* Dagster
-	* Apache Oozie
-	* Luigi
-
-* Data Catalogs
-	* Metadata Management
-	* Data Quality Metadata
-	* Data Lineage 
-
-*Note: Cloud Composer is a managed Apache Airflow service on Google Cloud Platform.*
-
-* Monitoring and observability for data pipelines
-	* Prometheus [general recommendation]
-	* Datadog [general recommendation]
-	* Sentry [general recommendation]
-	* Monte Carlo
-	* Datafold
-	* Soda Data
-	* StatsD
 
 * Networking
 	* Protocols [general recommendation]
@@ -237,4 +234,7 @@
 		* Hashicorp Vault
 		* Azure Key Vault
 		* AWS Secrets Manager
-	* Data governance & integrity
+	* Data access management tools
+		* Immuta
+		* AWS Lakeformation Governed Tables
+		* Snowflake Privacy Policies
