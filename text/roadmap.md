@@ -83,26 +83,70 @@
 	* Google Cloud Storage
 	* HDFS [general recommendation]
 
+* Data Catalog Tools
+	* Technical metadata
+		* Hive metastore [general recommendation]
+		* AWS Glue Catalog & Lakeformation 
+	* Business Metadata
+		* Alation 
+		* Collibra
+		* Apache Amundsen [general recommendation]
+
+*Note: Learn common metadata techniques like SQL Query Log Mining, data lineage capture, data dictionaries, data quality metadata, etc*
+
+* Data Lake storage SQL Tools
+	* Presto / Amazon Athena [general recommendation]
+	* Spark SQL
+
+* Data Lake ACID Transaction Tools
+	* Databricks Delta Lake
+	* Apache HUDI
+	* AWS Lakeformation Governed Tables
+
+* Data Ingestion / ETL
+	* Business Focused GUI
+		* Fivetran [general recommendation]
+		* Stitch
+	* Technical GUI
+		* Apache NiFi [general recommendation] 	
+		* StreamSets Data Collector
+		* AWS Glue
+		* Azure Data Factory
+	* Database Change Data Capture [general recommendation]
+		* Qlik Replicate
+		* AWS Database Migration Service
+		* Azure Data Factory
+		* Kafka Debezium
+	* Stream Ingestion
+		* AWS Kinesis Firehose
+		* Azure Event Hubs Capture
+		* Kafka Connect 
+
+*Note: Understand data ingestion fundamentals like Schema Evolution, Transaction Log Scanning for CDC, Data Backfills.*
+
+
 * Cluster computing fundamentals
+	* Apache Spark [general recommendation]
 	* Apache Hadoop 
 	* MapReduce
-	* Lambda & Kappa architectures
-	* Managed Hadoop [general recommendation]
+	* Lambda & Kappa architecture basics
+	* Managed Spark 
+		* Databricks [general recommendation]
 		* Amazon EMR
 		* Google Dataproc
 		* Azure Data Lake
 
-*Note: Most modern data processing frameworks are based on Apache Hadoop and MapReduce to some extent. Understanding these concepts can help you learn modern data processing frameworks much quicker.*
+*Note: Most modern data processing frameworks are based on Apache Spark, which is in turn based on Hadoop & MapReduce to some extent. Understanding these concepts can help you learn modern data processing frameworks much quicker.*
 
 * Data processing
 	* Batch
 		* Apache Pig
 		* Apache Arrow
-		* data build tool [personal recommendation]
+		* data build tool for Data Warehouses [personal recommendation]
 	* Hybrid
-		* Apache Spark [general recommendation]
-		* Apache Beam [personal recommendation]
-		* Apache Flink [general recommendation]
+		* Apache Spark / Lambda Architecture [general recommendation]
+		* Apache Beam 
+		* Apache Flink / Kappa Architecture [general recommendation]
 		* Apache NiFi
 	* Streaming
 		* Apache Kafka / Confluent Ecosystem [personal recommendation]
